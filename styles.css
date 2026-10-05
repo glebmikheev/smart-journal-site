@@ -28,16 +28,16 @@ h1,h2,h3,p{margin-top:0}h2{font-family:Georgia,"Times New Roman",serif;font-size
 .quote-attribution > span { font-size: 17px; }
 .quote-attribution small { font-size: 14px; max-width: 680px; }
 .thought-copy { display: flex; align-items: center; gap: 40px; }
-.thought-copy > p { max-width: 850px; margin: 0; font-size: 18px; line-height: 1.65; }
+.thought-copy > p { max-width: 850px; margin: 0; font-size: 20px; line-height: 1.65; }
 .thought-copy .button { flex-shrink: 0; font-size: 16px; }
 .essentials {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  justify-content: space-between;
   gap: 28px;
   font-size: 16px;
   line-height: 1.6;
 }
-.essentials span { align-items: flex-start; min-width: 0; }
+.essentials span { align-items: flex-start; min-width: 0; flex: 0 1 auto; }
 .essentials span::before { margin-top: 10px; }
 .demo-first { padding-top: 23px; }
 .version, .languages button { font-size: 14px; }
@@ -48,13 +48,13 @@ h1,h2,h3,p{margin-top:0}h2{font-family:Georgia,"Times New Roman",serif;font-size
 @media (max-width: 1000px) {
   .thought { gap: 24px; }
   .thought-copy { gap: 28px; }
-  .essentials { gap: 20px; font-size: 15px; }
+  .essentials { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; font-size: 15px; }
 }
 @media (max-width: 760px) {
   .thought { padding-block: 30px 22px; gap: 22px; }
   .thought h2 { font-size: 28px; }
   .thought-copy { flex-direction: column; align-items: flex-start; gap: 18px; }
-  .thought-copy > p { font-size: 17px; line-height: 1.6; }
+  .thought-copy > p { font-size: 18px; line-height: 1.6; }
   .essentials { grid-template-columns: 1fr; gap: 10px; font-size: 15px; padding-block: 17px; }
   .demo-first { padding-top: 21px; }
   .demo-topline h1 { font-size: 17px; }
