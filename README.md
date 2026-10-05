@@ -27,3 +27,16 @@ The workspace visual is a labelled HTML/CSS illustration using fictional demo
 documents, not a live application or a claimed screenshot. Replace or supplement it
 with actual demo screenshots as the recorded walkthrough becomes available.
 The current demo notice is dated 05.10.2026. Update it if the schedule changes.
+
+## Editorial choices
+
+The page leads with the demo and uses the public-facing label **alpha v1.0**.
+There is no link to the private application repository.
+
+The Marcus Aurelius quotation is from Book III, section 9 in Jeremy Collier's
+free 1701 translation, not a literal translation of the Greek. Russian and French
+render that English wording; the attribution says so and links to the historical text:
+https://en.wikisource.org/wiki/The_Emperor_Marcus_Antoninus:_His_Conversation_with_Himself/Book_3
+
+The landing palette uses warm ivory, clay, forest and muted blue; the product
+illustration keeps the application's own colours.

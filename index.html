@@ -1,34 +1,38 @@
-<!doctype html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f8f2">
-  <meta name="description" content="Smart Journal is a local-first knowledge workspace for notes, documents, semantic search and connections you can trace back to their sources.">
-  <meta property="og:title" content="Smart Journal — Find the thread">
-  <meta property="og:description" content="A quieter place for your knowledge. Search by meaning. Explore connections. Keep the evidence.">
+  <meta name="theme-color" content="#f8f5ef">
+  <meta name="description" content="Smart Journal brings notes and documents together. Find passages by meaning, check original sources and review connections in a working local web application.">
+  <meta property="og:title" content="Smart Journal — Notes worth finding again">
+  <meta property="og:description" content="A personal project for finding what you remember and building on what you know. Product walkthrough · alpha v1.0.">
   <meta property="og:type" content="website">
-  <title>Smart Journal — Find the thread</title>
+  <title>Smart Journal — Notes worth finding again</title>
   <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
-  <script src="./site.js" defer></script>
+  <script src="./site.js" defer=""></script>
 </head>
 <body>
   <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
   <header class="site-header wrap">
-    <a class="brand" href="#" aria-label="Smart Journal home"><img src="./assets/mark.svg" width="30" height="30" alt=""><span>Smart Journal</span></a>
-    <nav aria-label="Main navigation" data-label="navigation"><a href="#workspace" data-i18n="navWorkspace">Workspace</a><a href="#approach" data-i18n="navApproach">Approach</a><a href="#demo" data-i18n="navDemo">Demo <span class="nav-arrow" aria-hidden="true">↗</span></a></nav>
-    <div class="languages" role="group" aria-label="Interface language" data-label="language"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="fr" aria-pressed="false">FR</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
+    <a class="brand" href="#"><img src="./assets/mark.svg" width="30" height="30" alt=""><span>Smart Journal</span></a>
+    <nav data-label="navigation" aria-label="Main navigation"><a href="#demo" data-i18n="navDemo">Demo</a><a href="#workspace" data-i18n="navWorkspace">The product</a><a href="#approach" data-i18n="navApproach">Engineering</a></nav>
+    <div class="languages" role="group" data-label="language" aria-label="Interface language"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="fr" aria-pressed="false">FR</button><button type="button" data-lang="ru" aria-pressed="false">RU</button></div>
   </header>
   <main id="main">
-    <section class="hero wrap">
-      <div class="eyebrow"><span class="status-dot"></span><span data-i18n="alpha">Independent project · Alpha</span></div>
-      <h1><span data-i18n="hero1">Keep the thought.</span><br><em data-i18n="hero2">Find the thread.</em></h1>
-      <p class="hero-copy" data-i18n="heroCopy">A personal knowledge workspace for the things you read, write and almost remember. Find them by meaning. Connect them with evidence.</p>
-      <div class="hero-actions"><a class="button primary" href="#demo"><span data-i18n="seeDemo">See it in action</span><span aria-hidden="true">↗</span></a><a class="text-link" href="#workspace"><span data-i18n="explore">Explore the workspace</span><span aria-hidden="true">↓</span></a></div>
-      <div class="hero-foot"><span data-i18n="localBadge">Local-first</span><span aria-hidden="true">/</span><span data-i18n="languagesBadge">Multilingual search</span><span aria-hidden="true">/</span><span data-i18n="reviewBadge">Human-reviewed AI</span></div>
+    <section class="demo-first wrap" id="demo" aria-labelledby="demo-heading">
+      <div class="demo-topline"><h1 id="demo-heading" data-i18n="demoHeading">Smart Journal in action</h1><span class="version">alpha v1.0</span></div>
+      <div class="video-wrap"><div class="video-placeholder" id="video-slot">
+        <div class="video-art" aria-hidden="true"><svg viewBox="0 0 1000 500"><path d="M100 320 340 140 570 300 860 100M340 140l310 290 210-330M100 320l550 110" fill="none" stroke="currentColor"></path><circle cx="100" cy="320" r="28"></circle><circle cx="340" cy="140" r="18"></circle><circle cx="570" cy="300" r="36"></circle><circle cx="860" cy="100" r="21"></circle><circle cx="650" cy="430" r="14"></circle></svg></div>
+        <div class="video-copy"><span class="video-glyph" aria-hidden="true">▶</span><span class="eyebrow" data-i18n="videoSoon">PRODUCT WALKTHROUGH</span><h2 data-i18n="videoTitle">The demo is on its way.</h2><p data-i18n="videoNote">As of 05.10.2026, the video is rendering.<br>It will be uploaded here soon.</p><span class="video-source" data-i18n="videoSource">YouTube player will appear here</span></div>
+      </div><div class="video-bottom"><span data-i18n="videoBottom">Search → sources → connections</span><span data-i18n="videoBottom2">alpha v1.0</span></div></div>
+      <p class="demo-caption" data-i18n="demoIntro">Find a passage. Check its source. Connect the ideas.</p>
     </section>
-
+    <section class="thought wrap" aria-labelledby="thought-heading">
+      <div class="thought-quote"><h2 id="thought-heading" data-i18n="heroQuote">“The happiness of your life depends upon the quality of your thoughts.”</h2><a class="quote-attribution" href="https://en.wikisource.org/wiki/The_Emperor_Marcus_Antoninus:_His_Conversation_with_Himself/Book_3" target="_blank" rel="noopener noreferrer"><span data-i18n="quoteAuthor">Marcus Aurelius</span><small data-i18n="quoteCredit">Meditations, III.9 · freely translated by Jeremy Collier</small></a></div>
+      <div class="thought-copy"><p data-i18n="heroCopy">Give your thoughts somewhere to grow. Keep notes and sources together, find what you remember by meaning, and follow the connections back to the original text.</p><a class="button primary" href="#workspace"><span data-i18n="explore">Discover the product</span><span aria-hidden="true">↓</span></a></div>
+    </section>
+    <div class="essentials wrap"><span data-i18n="localBadge">Stored on your computer</span><span data-i18n="languagesBadge">English · French · Russian</span><span data-i18n="reviewBadge">You decide which links to keep</span></div>
+    <section class="motivation wrap" aria-labelledby="motivation-heading"><div class="section-label"><span class="section-number">01</span><span data-i18n="whyLabel">WHY I BUILT IT</span></div><div class="motivation-body"><h2 id="motivation-heading" data-i18n="motivationHeading">I remembered the idea.<br>I couldn’t find the document.</h2><p data-i18n="motivationCopy">Smart Journal began with that frustration. A personal tool for getting back to what you’ve read — and building on it.</p></div></section>
     <section class="product-section wrap" id="workspace" aria-labelledby="product-heading">
       <h2 id="product-heading" class="sr-only" data-i18n="workspaceHeading">One workspace, a clearer picture</h2>
       <div class="product-frame" aria-label="Illustrative Smart Journal workspace with demo content" data-label="illustration">
@@ -45,7 +49,7 @@
           <div class="product-toolbar"><span>Orion <span class="crumb">/</span> <span data-i18n="library">Library</span></span><span class="toolbar-right"><span class="tiny-dot"></span><span data-i18n="localWorkspace">Local workspace</span></span></div>
           <div class="product-inner">
             <div class="mock-heading"><h3 data-i18n="library">Library</h3><span>10</span><div class="mini-button"><span aria-hidden="true">＋</span><span data-i18n="addFiles">Add files</span></div></div>
-            <div class="search-example"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 6 6"/></svg><span data-i18n="exampleQuery">Why did we separate the local model server?</span><span aria-hidden="true">↵</span></div>
+            <div class="search-example"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="6.5"></circle><path d="m15 15 6 6"></path></svg><span data-i18n="exampleQuery">Why did we separate the local model server?</span><span aria-hidden="true">↵</span></div>
             <div class="mock-modes"><span class="mock-tab" data-i18n="byWords">By words</span><span class="mock-tab selected" data-i18n="byMeaning">By meaning</span><span class="filters-label" data-i18n="filters">Filters</span></div>
             <div class="result-layout">
               <div class="example-results">
@@ -59,36 +63,23 @@
       </div>
       <div class="figure-caption"><span data-i18n="figureCaption">An illustrative workspace with authored demo documents.</span><span data-i18n="figureNote">Your knowledge, with a trail back to the source.</span></div>
     </section>
-
-    <section class="motivation wrap section-space" aria-labelledby="motivation-heading">
-      <div class="section-label"><span class="section-number">01</span><span data-i18n="whyLabel">WHY IT EXISTS</span></div>
-      <div class="motivation-body"><h2 id="motivation-heading" data-i18n="motivationHeading">Saving something isn’t the same as finding it again.</h2><div><p data-i18n="motivationCopy">A useful idea rarely lives in one place. It is scattered across a note, a document, a conversation. Weeks later, you remember the connection — but not the words.</p><p data-i18n="motivationCopy2">Smart Journal is built around that moment: bringing your material together, helping you find the meaning, and making the connections easier to inspect.</p></div></div>
-    </section>
-
     <section class="features wrap section-space" aria-labelledby="features-heading">
-      <div class="section-label"><span class="section-number">02</span><span data-i18n="featuresLabel">A MORE USEFUL WORKSPACE</span></div>
-      <div class="section-heading"><h2 id="features-heading" data-i18n="featuresHeading">From saved material<br>to connected knowledge.</h2><p data-i18n="featuresIntro">A calm interface. A few deliberate tools. Enough structure to stay useful.</p></div>
+      <div class="section-label"><span class="section-number">02</span><span data-i18n="featuresLabel">WHAT YOU CAN DO</span></div>
+      <div class="section-heading"><h2 id="features-heading" data-i18n="featuresHeading">Put what you know to work.</h2></div>
       <div class="feature-grid">
-        <article class="feature-card"><span class="feature-index">01 /</span><svg class="feature-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="7" y="6" width="22" height="28" rx="3"/><path d="M13 14h10M13 20h10M13 26h6M29 13l5 3v18"/></svg><h3 data-i18n="f1Title">Bring your sources together.</h3><p data-i18n="f1Copy">Notes, documents and media belong in one library. Keep the originals, organise with groups and tags, and add the properties that matter to you.</p><div class="feature-footer">PDF <span>·</span> Markdown <span>·</span> Text <span>·</span> Media</div></article>
-        <article class="feature-card"><span class="feature-index">02 /</span><svg class="feature-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="17" cy="17" r="10"/><path d="m24 24 10 10M12 17h10M17 12v10"/></svg><h3 data-i18n="f2Title">Search the idea, not just the words.</h3><p data-i18n="f2Copy">Use a phrase you remember, even when the wording is different. Multilingual search brings back relevant passages with their original context.</p><div class="feature-footer" data-i18n="f2Footer">Russian · English · French</div></article>
-        <article class="feature-card"><span class="feature-index">03 /</span><svg class="feature-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="9" cy="12" r="4"/><circle cx="30" cy="9" r="4"/><circle cx="25" cy="30" r="5"/><path d="m13 12 13-2M11 16l11 10M29 13l-3 12"/></svg><h3 data-i18n="f3Title">Connect, with something to go on.</h3><p data-i18n="f3Copy">Explore suggests relationships and shows supporting passages. Inspect the evidence, accept what is useful, and keep the final decision yours.</p><div class="feature-footer" data-i18n="f3Footer">Sources first. Your judgement last.</div></article>
+        <article class="feature-card"><span class="feature-index">01 /</span><svg class="feature-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="7" y="6" width="22" height="28" rx="3"></rect><path d="M13 14h10M13 20h10M13 26h6M29 13l5 3v18"></path></svg><h3 data-i18n="f1Title">Keep the whole story.</h3><p data-i18n="f1Copy">A meeting note, a PDF, a recording: bring them into one library. Add groups, tags and your own properties.</p><div class="feature-footer" data-i18n="mediaTypes">Documents · Images · Audio · Video</div></article>
+        <article class="feature-card"><span class="feature-index">02 /</span><svg class="feature-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="17" cy="17" r="10"></circle><path d="m24 24 10 10M12 17h10M17 12v10"></path></svg><h3 data-i18n="f2Title">Find it in your own words.</h3><p data-i18n="f2Copy">Remember the idea but not the title? Search by meaning, then open the exact passage in its source.</p><div class="feature-footer" data-i18n="f2Footer">Russian · English · French</div></article>
+        <article class="feature-card"><span class="feature-index">03 /</span><svg class="feature-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="9" cy="12" r="4"></circle><circle cx="30" cy="9" r="4"></circle><circle cx="25" cy="30" r="5"></circle><path d="m13 12 13-2M11 16l11 10M29 13l-3 12"></path></svg><h3 data-i18n="f3Title">Understand the connection.</h3><p data-i18n="f3Copy">Explore proposes links between your notes with supporting passages. Read them, accept or reject, then see the result in the graph.</p><div class="feature-footer" data-i18n="f3Footer">AI proposes. You review.</div></article>
       </div>
     </section>
-
     <section class="approach-section section-space" id="approach" aria-labelledby="approach-heading"><div class="wrap">
-      <div class="section-label"><span class="section-number">03</span><span data-i18n="approachLabel">DESIGNED WITH CARE</span></div>
-      <div class="approach-grid"><div><h2 id="approach-heading" data-i18n="approachHeading">Quiet on the surface.<br>Considered underneath.</h2><p class="approach-copy" data-i18n="approachCopy">The interface and the local core are separate by design. Your sources stay distinct from AI suggestions, and background work stays visible and recoverable.</p><div class="tech-tags"><span>Python Core</span><span>React</span><span>Local storage</span></div></div>
-      <div class="principles"><article><span>01</span><div><h3 data-i18n="p1Title">Local-first, by choice.</h3><p data-i18n="p1Copy">Store your workspace on your computer. Choose local models for local processing, or explicitly configure a cloud provider.</p></div></article><article><span>02</span><div><h3 data-i18n="p2Title">Evidence has a place.</h3><p data-i18n="p2Copy">A suggested relationship stays a suggestion until reviewed. Supporting sources remain part of the connection.</p></div></article><article><span>03</span><div><h3 data-i18n="p3Title">Progress you can see.</h3><p data-i18n="p3Copy">Import in the background, pause the queue, watch model readiness, and back up or restore your workspace.</p></div></article></div></div>
-      <div class="architecture" aria-label="High-level architecture" data-label="architecture"><div><span class="arch-number">01</span><b data-i18n="arch1">Your material</b><small data-i18n="arch1Sub">Notes & original files</small></div><span class="arch-arrow" aria-hidden="true">→</span><div><span class="arch-number">02</span><b data-i18n="arch2">Local workspace</b><small data-i18n="arch2Sub">Organised & preserved</small></div><span class="arch-arrow" aria-hidden="true">→</span><div><span class="arch-number">03</span><b data-i18n="arch3">Search & Explore</b><small data-i18n="arch3Sub">Relevant passages & proposals</small></div><span class="arch-arrow" aria-hidden="true">→</span><div><span class="arch-number">04</span><b data-i18n="arch4">Knowledge graph</b><small data-i18n="arch4Sub">Connections you have reviewed</small></div></div>
+      <div class="section-label"><span class="section-number">03</span><span data-i18n="approachLabel">BEHIND THE PRODUCT</span></div>
+      <div class="approach-grid"><div><h2 id="approach-heading" data-i18n="approachHeading">Built beyond the demo.</h2><p class="approach-copy" data-i18n="approachCopy">A working web application backed by a separate Python Core. The same API handles search, imports and reviewed connections.</p><div class="tech-tags"><span>Python Core</span><span>React</span><span>Local storage</span></div></div>
+      <div class="principles"><article><span>01</span><div><h3 data-i18n="p1Title">Local processing, optional cloud.</h3><p data-i18n="p1Copy">Files stay in your workspace. Local models can run on your machine; cloud providers are an explicit choice.</p></div></article><article><span>02</span><div><h3 data-i18n="p2Title">Review that survives a restart.</h3><p data-i18n="p2Copy">Saved proposals retain their source references. Core checks those references and their versions before saving a connection.</p></div></article><article><span>03</span><div><h3 data-i18n="p3Title">The everyday work matters too.</h3><p data-i18n="p3Copy">Background imports, a pauseable queue, model status, memory controls and backup/restore are part of the application.</p></div></article></div></div>
+      <div class="architecture" aria-label="High-level architecture" data-label="architecture"><div><span class="arch-number">01</span><b data-i18n="arch1">Your material</b><small data-i18n="arch1Sub">Notes &amp; original files</small></div><span class="arch-arrow" aria-hidden="true">→</span><div><span class="arch-number">02</span><b data-i18n="arch2">Local workspace</b><small data-i18n="arch2Sub">Organised &amp; preserved</small></div><span class="arch-arrow" aria-hidden="true">→</span><div><span class="arch-number">03</span><b data-i18n="arch3">Search &amp; Explore</b><small data-i18n="arch3Sub">Relevant passages &amp; proposals</small></div><span class="arch-arrow" aria-hidden="true">→</span><div><span class="arch-number">04</span><b data-i18n="arch4">Knowledge graph</b><small data-i18n="arch4Sub">Connections you have reviewed</small></div></div>
     </div></section>
-
-    <section class="demo-section wrap section-space" id="demo" aria-labelledby="demo-heading">
-      <div class="demo-intro"><div class="section-label"><span class="section-number">04</span><span data-i18n="demoLabel">SEE THE WHOLE THREAD</span></div><h2 id="demo-heading" data-i18n="demoHeading">A thought. A source.<br>A connection.</h2><p data-i18n="demoIntro">A short walkthrough of finding an idea, checking the evidence and adding a reviewed relationship to the graph.</p></div>
-      <div class="video-wrap"><div class="video-placeholder" id="video-slot"><div class="video-art" aria-hidden="true"><svg viewBox="0 0 520 260"><path d="M85 150 235 70 390 145M85 150l190 65 115-70M235 70l40 145" fill="none" stroke="#b7c8ad" stroke-width="1"/><circle cx="85" cy="150" r="22" fill="#d8e2cf"/><circle cx="235" cy="70" r="15" fill="#b1c3a7"/><circle cx="390" cy="145" r="30" fill="#c6d6bc"/><circle cx="275" cy="215" r="12" fill="#dce4d5"/></svg></div><div class="video-copy"><span class="video-glyph" aria-hidden="true">▶</span><span class="eyebrow" data-i18n="videoSoon">THE WALKTHROUGH IS ON ITS WAY</span><h3 data-i18n="videoTitle">A little more time<br>for the finishing touches.</h3><p data-i18n="videoNote">As of 05.10.2026, the demo video is rendering.<br>It will be uploaded here soon.</p><span class="video-source" data-i18n="videoSource">Coming via YouTube</span></div></div><div class="video-bottom"><span data-i18n="videoBottom">Product walkthrough · Authored demo documents</span><span data-i18n="videoBottom2">Available here soon</span></div></div>
-    </section>
-
-    <section class="closing wrap"><div><span class="eyebrow" data-i18n="closingLabel">BUILT TO KEEP THINKING</span><h2 data-i18n="closingHeading">Less searching for files.<br>More following ideas.</h2></div><div class="closing-note"><p data-i18n="closingCopy">Smart Journal is an independent project in active development. The alpha brings its core workflows into a working web interface; broader validation and packaging are still ahead.</p><a class="text-link" href="https://github.com/glebmikheev/smart-journal" target="_blank" rel="noopener noreferrer"><span data-i18n="projectLink">Project on GitHub</span><span aria-hidden="true">↗</span></a></div></section>
+    <div class="release wrap"><span class="status-dot" aria-hidden="true"></span><p data-i18n="releaseNote">alpha v1.0 · Core and web interface are working. Wider testing and distribution are next.</p></div>
   </main>
-  <footer class="site-footer wrap"><a class="brand" href="#"><img src="./assets/mark.svg" width="25" height="25" alt=""><span>Smart Journal</span></a><span data-i18n="footer">An independent project. A workspace for your thinking.</span><span>2026</span></footer>
-</body>
-</html>
+  <footer class="site-footer wrap"><a class="brand" href="#"><img src="./assets/mark.svg" width="25" height="25" alt=""><span>Smart Journal</span></a><span data-i18n="footer">Designed and built by Gleb Mikheev</span><span>2026</span></footer>
+
+</body></html>
