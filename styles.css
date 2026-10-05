@@ -17,11 +17,49 @@ h1,h2,h3,p{margin-top:0}h2{font-family:Georgia,"Times New Roman",serif;font-size
 /* Keep the actual video in its native 16:9 proportions. */
 .video-placeholder:has(.youtube-player){aspect-ratio:16/9;min-height:0}
 
-/* Compact introduction above the demo; longer value statements wrap naturally. */
-.thought{padding-block:40px 28px;gap:70px}
-.essentials{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;line-height:1.65}
-.essentials span{align-items:flex-start;min-width:0}
-.essentials span::before{margin-top:9px}
-.demo-first{padding-top:23px}
-@media(max-width:1000px){.thought{gap:40px}.essentials{gap:20px;font-size:12px}}
-@media(max-width:760px){.thought{padding-block:30px 22px;gap:22px}.thought h2{font-size:28px}.thought-copy>p{font-size:16px;line-height:1.65}.essentials{grid-template-columns:1fr;gap:10px;font-size:13px;padding-block:17px}.demo-first{padding-top:21px}}
+/* Readable supporting text and a vertical introduction above the demo. */
+.thought {
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: 24px;
+  padding-block: 40px 28px;
+}
+.thought-quote { max-width: 680px; }
+.quote-attribution > span { font-size: 17px; }
+.quote-attribution small { font-size: 14px; max-width: 680px; }
+.thought-copy { display: flex; align-items: center; gap: 40px; }
+.thought-copy > p { max-width: 850px; margin: 0; font-size: 18px; line-height: 1.65; }
+.thought-copy .button { flex-shrink: 0; font-size: 16px; }
+.essentials {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.essentials span { align-items: flex-start; min-width: 0; }
+.essentials span::before { margin-top: 10px; }
+.demo-first { padding-top: 23px; }
+.version, .languages button { font-size: 14px; }
+.video-source, .video-bottom, .demo-caption { font-size: 14px; }
+.figure-caption, .feature-footer, .tech-tags span { font-size: 14px; }
+.architecture small, .release p, .site-footer > span { font-size: 14px; }
+.section-label, .feature-index { font-size: 12px; }
+@media (max-width: 1000px) {
+  .thought { gap: 24px; }
+  .thought-copy { gap: 28px; }
+  .essentials { gap: 20px; font-size: 15px; }
+}
+@media (max-width: 760px) {
+  .thought { padding-block: 30px 22px; gap: 22px; }
+  .thought h2 { font-size: 28px; }
+  .thought-copy { flex-direction: column; align-items: flex-start; gap: 18px; }
+  .thought-copy > p { font-size: 17px; line-height: 1.6; }
+  .essentials { grid-template-columns: 1fr; gap: 10px; font-size: 15px; padding-block: 17px; }
+  .demo-first { padding-top: 21px; }
+  .demo-topline h1 { font-size: 17px; }
+  .version { font-size: 13px; }
+  .languages button { font-size: 12px; }
+  .video-copy p { font-size: 16px; }
+  .video-bottom { flex-wrap: wrap; gap: 5px 14px; }
+}
