@@ -30,7 +30,8 @@ The current demo notice is dated 05.10.2026. Update it if the schedule changes.
 
 ## Editorial choices
 
-The page leads with the demo and uses the public-facing label **alpha v1.0**.
+The page opens with the quotation and product values, followed immediately by
+the prominent demo player. It uses the public-facing label **alpha v1.0**.
 There is no link to the private application repository.
 
 The Marcus Aurelius quotation is from Book III, section 9 in Jeremy Collier's

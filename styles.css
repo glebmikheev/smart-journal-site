@@ -16,3 +16,12 @@ h1,h2,h3,p{margin-top:0}h2{font-family:Georgia,"Times New Roman",serif;font-size
 
 /* Keep the actual video in its native 16:9 proportions. */
 .video-placeholder:has(.youtube-player){aspect-ratio:16/9;min-height:0}
+
+/* Compact introduction above the demo; longer value statements wrap naturally. */
+.thought{padding-block:40px 28px;gap:70px}
+.essentials{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;line-height:1.65}
+.essentials span{align-items:flex-start;min-width:0}
+.essentials span::before{margin-top:9px}
+.demo-first{padding-top:23px}
+@media(max-width:1000px){.thought{gap:40px}.essentials{gap:20px;font-size:12px}}
+@media(max-width:760px){.thought{padding-block:30px 22px;gap:22px}.thought h2{font-size:28px}.thought-copy>p{font-size:16px;line-height:1.65}.essentials{grid-template-columns:1fr;gap:10px;font-size:13px;padding-block:17px}.demo-first{padding-top:21px}}
