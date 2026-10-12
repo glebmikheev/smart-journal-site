@@ -72,7 +72,7 @@ const translations = {
     "demoIntro": "Find a passage. Check its source. Connect the ideas.",
     "videoSoon": "PRODUCT WALKTHROUGH",
     "videoTitle": "The demo is on its way.",
-    "videoNote": "As of 05.10.2026, the video is rendering.\nIt will be uploaded here soon.",
+    "videoNote": "As of 12.10.2026, the video is rendering.\nIt will be uploaded here soon.",
     "videoSource": "YouTube player will appear here",
     "videoBottom": "Search → sources → connections",
     "videoBottom2": "alpha v1.0",
