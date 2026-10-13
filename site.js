@@ -1,5 +1,5 @@
 /* Add the 11-character YouTube ID when the demo is uploaded. */
-const YOUTUBE_VIDEO_ID = "";
+const YOUTUBE_VIDEO_ID = "R5FO6eEPl2U";
 
 const translations = {
   "en": {
